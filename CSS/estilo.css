@@ -1,0 +1,73 @@
+
+/* style the footer*/
+foote{
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color:black
+}
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,100&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+.gallery-container{
+    width: 100%;
+    padding: 50px 0;
+}
+.gallery-container h1{
+   font-size: 2vw;
+   padding-bottom: 15px;
+   text-align: center;
+   text-transform: uppercase;
+   color: black;
+}
+.filho{
+    width: 100%;
+    max-width: 1600px;
+    margin:auto;
+    padding: 20px 20px;
+}
+.gallery-container .neto{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.gallery-container .neto a{
+    padding: 10px;
+}
+.gallery-container .image{
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery-container .image img{
+    width: 100%;
+    height: 100%;
+    transition: 0,4s;
+    border-radius: 10px;
+}
+.gallery-container .image:hover img{
+    transform:scale(1.5);
+}
+@media screen and (max-width:1200px){
+    .gallery-container .image{
+        flex: 33.33%;
+    }
+}
+@media screen and (max-width:768px) {
+ .gallery-container .image{
+    flex:50%;
+ }
+ .gallery-container h1{
+    font-size: 22px;
+}
+}
+@media screen and (max-width:480px) {
+.gallery-container .image{
+    flex:100%;
+}
+}
